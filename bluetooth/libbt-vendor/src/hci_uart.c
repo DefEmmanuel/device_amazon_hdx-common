@@ -24,8 +24,8 @@
  *
  ******************************************************************************/
 
-#define LOG_TAG "bt_vendor"
-
+#define LOG_TAG "bt_vendor_22"
+ 
 #include <utils/Log.h>
 #include <termios.h>
 #include <fcntl.h>

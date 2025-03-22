@@ -1,0 +1,74 @@
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=9
+LINEAGE_VERSION=16.0-20250119-UNOFFICIAL-thor
+TARGET_PRODUCT=lineage_thor
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm
+TARGET_ARCH_VARIANT=armv7-a-neon
+TARGET_CPU_VARIANT=krait
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.15.150-1-MANJARO-x86_64-Ubuntu-22.04.3-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3A.190801.002
+OUT_DIR=/home/emmanuel/workspace/lineageos/out
+PRODUCT_SOONG_NAMESPACES= hardware/qcom/audio-caf/msm8974 hardware/qcom/display-caf/msm8974 hardware/qcom/media-caf/msm8974
+============================================
+ninja: no work to do.
+ninja: no work to do.
+[ 14% 1/7] target thumb C: libbt-vendor <= device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:155:25: warning: unused variable 'enable_ldo_path' [-Wunused-variable]
+        char rfkill_type[64], *enable_ldo_path = NULL;
+                               ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:156:17: warning: unused variable 'enable_ldo' [-Wunused-variable]
+        char type[16], enable_ldo[6];
+                       ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:157:24: warning: unused variable 'fd_ldo' [-Wunused-variable]
+        int fd, size, i, ret, fd_ldo;
+                              ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:160:7: warning: unused variable 'state' [-Wunused-variable]
+        char state;
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:303:1: warning: unused label 'done' [-Wunused-label]
+done:
+^~~~~
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:353:6: warning: unused variable 'nCnt' [-Wunused-variable]
+        int nCnt = 0;
+            ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:355:7: warning: unused variable 'is_ant_req' [-Wunused-variable]
+        bool is_ant_req = false;
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:356:7: warning: unused variable 'wipower_status' [-Wunused-variable]
+        char wipower_status[PROPERTY_VALUE_MAX];
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:357:7: warning: unused variable 'emb_wp_mode' [-Wunused-variable]
+        char emb_wp_mode[PROPERTY_VALUE_MAX];
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:358:7: warning: unused variable 'bt_version' [-Wunused-variable]
+        char bt_version[PROPERTY_VALUE_MAX];
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:359:7: warning: unused variable 'ignore_boot_prop' [-Wunused-variable]
+        bool ignore_boot_prop = TRUE;
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:360:7: warning: unused variable 'skip_init' [-Wunused-variable]
+        bool skip_init = true;
+             ^
+device/amazon/hdx-common/bluetooth/libbt-vendor/src/bt_vendor_qcom.c:505:2: warning: excess elements in struct initializer
+        ssr_cleanup
+        ^~~~~~~~~~~
+13 warnings generated.
+[ 28% 2/7] target SharedLib: libbt-vendor (/home/emmanuel/workspace/lineageos/out/target/product/thor/obj/SHARED_LIBRARIES/libbt-vendor_intermediates/LINKED/libbt-vendor.so)
+[ 42% 3/7] target Pack Relocations: libbt-vendor (/home/emmanuel/workspace/lineageos/out/target/product/thor/obj/SHARED_LIBRARIES/libbt-vendor_intermediates/PACKED/libbt-vendor.so)
+[ 57% 4/7] target Symbolic: libbt-vendor (/home/emmanuel/workspace/lineageos/out/target/product/thor/symbols/system/vendor/lib/libbt-vendor.so)
+[ 71% 5/7] target Strip (mini debug info): libbt-vendor (/home/emmanuel/workspace/lineageos/out/target/product/thor/obj/SHARED_LIBRARIES/libbt-vendor_intermediates/libbt-vendor.so)
+[ 85% 6/7] Copy: /home/emmanuel/workspace/lineageos/out/target/product/thor/system/vendor/lib/libbt-vendor.so
+[100% 7/7] build /home/emmanuel/workspace/lineageos/out/target/product/thor/obj/SHARED_LIBRARIES/libbt-vendor_intermediates/libbt-vendor.so.toc
+
+[0;32m#### build completed successfully (3 seconds) ####[00m
+

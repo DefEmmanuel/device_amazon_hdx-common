@@ -24,7 +24,7 @@
  *
  ******************************************************************************/
 
-#define LOG_TAG "bt_vendor"
+#define LOG_TAG "bt_vendor_222"
 
 #include <utils/Log.h>
 #include <cutils/properties.h>
@@ -263,7 +263,7 @@ static int bt_powerup(int enable)
 	/* query wifi status */
 	property_get(WIFI_PROP_NAME, wifi_status, "");
 
-	ALOGI("bt get wifi status: %s, isInit: %d\n",  wifi_status, isInit);
+	ALOGI("bt get wifi status 11: %s, isInit: %d\n",  wifi_status, isInit);
 
 	/* If wlan driver is not loaded, and bt is changed from off => on */
 	if (strncmp(wifi_status, "unloaded", strlen("unloaded")) == 0 ||
@@ -451,7 +451,7 @@ static int op(bt_vendor_opcode_t opcode, void *param)
 			uint8_t *state = (uint8_t *) param;
 			uint8_t wake_assert = (*state == BT_VND_LPM_WAKE_ASSERT) ? \
 					       UPIO_ASSERT : UPIO_DEASSERT;
-			lpm_set_ar3k(UPIO_BT_WAKE, wake_assert, 0);
+			// lpm_set_ar3k(UPIO_BT_WAKE, wake_assert, 0);
 		}
 		break;
 

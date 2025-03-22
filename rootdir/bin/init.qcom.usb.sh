@@ -258,3 +258,6 @@ diag_extra=`getprop persist.sys.usb.config.extra`
 if [ "$diag_extra" == "" ]; then
 	setprop persist.sys.usb.config.extra none
 fi
+
+/vendor/bin/load_wlan.sh
+chown wifi:wifi /sys/module/wlan/parameters/fwpath

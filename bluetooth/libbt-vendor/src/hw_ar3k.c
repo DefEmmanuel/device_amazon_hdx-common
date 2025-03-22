@@ -29,7 +29,8 @@
  *
  ******************************************************************************/
 
-#define LOG_TAG "bt_vendor"
+#include "log/log_main.h"
+#define LOG_TAG "bt_vendor_11"
 
 #include <sys/socket.h>
 #include <utils/Log.h>
@@ -990,6 +991,8 @@ static int ath_ps_download(int fd)
 	get_ps_file_name(dev_type, rom_version, ps_file);
 	get_patch_file_name(dev_type, rom_version, build_version, patch_file);
 
+	ALOGE("ps file:%s patch file:%s", ps_file, patch_file);
+
 	stream = fopen(ps_file, "r");
 	if (!stream) {
 		ALOGI("firmware file open error:%s, ver:%x\n", ps_file, rom_version);
@@ -1039,7 +1042,7 @@ download_cmplete:
 
 int ath3k_init(int fd, int speed, int init_speed, char *bdaddr, struct termios *ti)
 {
-	ALOGI(" %s ", __FUNCTION__);
+	ALOGI(" %s 123123", __FUNCTION__);
 
 	int r;
 	int err = 0;
@@ -1191,6 +1194,8 @@ void lpm_set_ar3k(uint8_t pio, uint8_t action, uint8_t polarity)
 		}
 
 		ALOGD("BT_VND_OP_LPM_WAKE_SET_STATE");
+
+		return;
 
 		if (action == UPIO_DEASSERT)
 			buffer = '0';
