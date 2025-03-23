@@ -48,7 +48,8 @@ PRODUCT_PACKAGES += \
 	init.qcom.ssr.sh \
 	init.qcom.usb.sh \
 	ueventd.qcom.rc \
-	init.recovery.qcom.rc
+	init.recovery.qcom.rc\
+	load_wlan.sh
 
 # ANT+
 PRODUCT_PACKAGES += \
